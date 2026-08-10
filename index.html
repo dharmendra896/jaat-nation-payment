@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAAT NATION - Rank Payment</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin: 0 0 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.ranks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #151515;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.card h2 {
+    font-size: 30px;
+    margin: 5px 0 8px;
+}
+
+.price {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.qr {
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 0 auto 15px;
+}
+
+.qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.scan {
+    color: #aaa;
+    margin-bottom: 18px;
+}
+
+.pay-btn {
+    display: block;
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 10px;
+    background: #43c3c7;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.pay-btn:active {
+    transform: scale(0.98);
+}
+
+.note {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 18px;
+}
+
+.upi {
+    text-align: center;
+    color: #888;
+    margin-top: 35px;
+}
+
+@media (max-width: 800px) {
+    .ranks {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>JAAT NATION</h1>
+    <div class="subtitle">Rank Payment Portal</div>
+
+    <div class="ranks">
+
+        <!-- VIP -->
+        <div class="card">
+            <h2>VIP RANK</h2>
+            <div class="price">₹199</div>
+
+            <div class="qr">
+                <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=upi%3A%2F%2Fpay%3Fpa%3D8290190080-4%40ybl%26pn%3DJAAT%2520NATION%26am%3D199%26cu%3DINR"
+                alt="VIP UPI QR">
+            </div>
+
+            <div class="scan">Scan QR or tap PAY below</div>
+
+            <a
+                class="pay-btn"
+                href="upi://pay?pa=8290190080-4@ybl&pn=JAAT%20NATION&am=199&cu=INR">
+                PAY ₹199
+            </a>
+
+            <div class="note">
+                After payment, open a Discord ticket and send your payment screenshot + Minecraft username.
+            </div>
+        </div>
+
+
+        <!-- TITAN -->
+        <div class="card">
+            <h2>TITAN RANK</h2>
+            <div class="price">₹299</div>
+
+            <div class="qr">
+                <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=upi%3A%2F%2Fpay%3Fpa%3D8290190080-4%40ybl%26pn%3DJAAT%2520NATION%26am%3D299%26cu%3DINR"
+                alt="Titan UPI QR">
+            </div>
+
+            <div class="scan">Scan QR or tap PAY below</div>
+
+            <a
+                class="pay-btn"
+                href="upi://pay?pa=8290190080-4@ybl&pn=JAAT%20NATION&am=299&cu=INR">
+                PAY ₹299
+            </a>
+
+            <div class="note">
+                After payment, open a Discord ticket and send your payment screenshot + Minecraft username.
+            </div>
+        </div>
+
+
+        <!-- ELITE -->
+        <div class="card">
+            <h2>ELITE RANK</h2>
+            <div class="price">₹499</div>
+
+            <div class="qr">
+                <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=upi%3A%2F%2Fpay%3Fpa%3D8290190080-4%40ybl%26pn%3DJAAT%2520NATION%26am%3D499%26cu%3DINR"
+                alt="Elite UPI QR">
+            </div>
+
+            <div class="scan">Scan QR or tap PAY below</div>
+
+            <a
+                class="pay-btn"
+                href="upi://pay?pa=8290190080-4@ybl&pn=JAAT%20NATION&am=499&cu=INR">
+                PAY ₹499
+            </a>
+
+            <div class="note">
+                After payment, open a Discord ticket and send your payment screenshot + Minecraft username.
+            </div>
+        </div>
+
+
+        <!-- IMMORTAL -->
+        <div class="card">
+            <h2>IMMORTAL RANK</h2>
+            <div class="price">₹999</div>
+
+            <div class="qr">
+                <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=upi%3A%2F%2Fpay%3Fpa%3D8290190080-4%40ybl%26pn%3DJAAT%2520NATION%26am%3D999%26cu%3DINR"
+                alt="Immortal UPI QR">
+            </div>
+
+            <div class="scan">Scan QR or tap PAY below</div>
+
+            <a
+                class="pay-btn"
+                href="upi://pay?pa=8290190080-4@ybl&pn=JAAT%20NATION&am=999&cu=INR">
+                PAY ₹999
+            </a>
+
+            <div class="note">
+                After payment, open a Discord ticket and send your payment screenshot + Minecraft username.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="upi">
+        UPI ID: <b>8290190080-4@ybl</b>
+    </div>
+
+</div>
+
+</body>
+</html>
